@@ -58,3 +58,14 @@ Leave the 'secret' field blank.
 Let me select individual events: Issue Comment, Pull Request, Status
 Check the box by 'Active'
 
+## Configuring a Highfive
+
+Copy `config.sample` to `config`. Add the username of the account that will be
+commenting as highfive. When logged into that account, visit
+`https://github.com/settings/tokens` and create a token with the permissions:
+
+* repo
+* public_repo
+* user
+
+Add that access token's value to the `token` field of the config. 
